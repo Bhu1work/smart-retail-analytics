@@ -86,8 +86,8 @@ smart-retail-analytics/
 ## Author
 
 **Bhuvan Sai Thatthari**  
-📍 Data Analyst | M.S. in Data Analytics Engineering  
-🔗 [LinkedIn](https://www.linkedin.com/in/your-profile](https://www.linkedin.com/in/saithatthari) • [GitHub](https://github.com/Bhu1work)
+Data Analyst | M.S. in Data Analytics Engineering  
+[LinkedIn](https://www.linkedin.com/in/saithatthari/) • [GitHub](https://github.com/Bhu1work)
 
 ---
 
