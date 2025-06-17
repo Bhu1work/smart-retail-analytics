@@ -1,112 +1,106 @@
-# 🛍️ Smart Retail Analytics: End-to-End Business Intelligence & ML Platform
+# 🛍Smart Retail Intelligence Dashboard
 
-A full-scale data analytics and machine learning solution built for a modern e-commerce environment. This project extracts deep business value from raw behavioral data — predicting churn, segmenting customers, forecasting demand, analyzing sentiment, and recommending products — all integrated into a real-world, business-facing dashboard.
 
----
-
-## 🚀 Project Summary
-
-Smart Retail Analytics is designed to replicate the analytical capabilities of a data science team embedded in a retail organization. From data wrangling to stakeholder-ready dashboards, the project delivers actionable insights using Python, Power BI, and advanced ML algorithms.
+## Live Demo
+**[Launch Dashboard](https://smartretailanalytics.streamlit.app/)**  
+**[View on GitHub](https://github.com/Bhu1work/smart-retail-analytics)**
 
 ---
 
-## 🔍 Key Modules & Deliverables
+## Project Overview
 
-### 1. 🧠 Churn Prediction
-- **Objective**: Predict if a customer will abandon cart behavior.
-- **Methods**: Logistic Regression, Random Forest
-- **Business Value**: Enables proactive retention strategies.
-- **Outputs**: `cart_churn_dataset.csv`, feature importance plots, churn driver insights.
+This project is an end-to-end **retail analytics and optimization platform** designed to simulate a real-world business intelligence solution. From raw user behavior logs to an interactive dashboard, this system supports decision-making in **churn prevention**, **customer segmentation**, **product recommendations**, and **sentiment monitoring**.
 
 ---
 
-### 2. 👥 Customer Segmentation (RFM + KMeans)
-- **Objective**: Group users based on Recency, Frequency, and Monetary value.
-- **Methods**: RFM Analysis + KMeans Clustering
-- **Business Value**: Drives targeted marketing campaigns and customer lifecycle strategy.
-- **Outputs**: `rfm_segments.csv`, segment-wise behavior summary.
+## Key Features
+
+- **Churn Prediction**  
+  Modeled user behavior leading to cart abandonment using Logistic Regression & Random Forest.
+
+- **Sentiment Analysis**  
+  Analyzed review sentiment polarity using NLP and visualized trends across product categories.
+
+- **RFM-Based Customer Segmentation**  
+  Used Recency, Frequency, Monetary scores to cluster customers into actionable personas.
+
+- **Product Recommendations**  
+  Built a personalized recommender system using matrix factorization techniques.
+
+- **Forecasting**  
+  Predicted demand trends using time series models like Prophet and ARIMA.
+
+- **Interactive Streamlit Dashboard**  
+  Hosted live with multi-tab insights, charts, and dynamic filters.
 
 ---
 
-### 3. 📈 Demand Forecasting
-- **Objective**: Predict daily sales for top-selling products over the next 30 days.
-- **Methods**: Facebook Prophet
-- **Business Value**: Supports inventory planning and sales strategy.
-- **Outputs**: 10 CSV forecasts in `/forecast_outputs/`, line charts per product.
+## Tech Stack
+
+| Tool | Purpose |
+|------|---------|
+| `Python` | Core analytics and ML |
+| `Pandas, NumPy` | Data manipulation |
+| `Scikit-learn` | Churn prediction, ML models |
+| `Seaborn, Matplotlib` | Static visualizations |
+| `Streamlit` | Interactive dashboard |
+| `Git LFS` | Handling large processed datasets |
+| `Prophet, Surprise` | Time series & recommendation models |
 
 ---
 
-### 4. 💬 Sentiment Analysis (NLP)
-- **Objective**: Classify product reviews into positive, negative, or neutral.
-- **Methods**: TF-IDF + Logistic Regression
-- **Business Value**: Captures customer satisfaction and pain points.
-- **Outputs**: `sentiment_summary.csv`, word clouds, class balance charts.
-
----
-
-### 5. 🛒 Product Recommendation Engine
-- **Objective**: Suggest top 5 products for each user.
-- **Methods**: Collaborative Filtering (SVD via Surprise)
-- **Business Value**: Enhances user engagement and cross-sell performance.
-- **Outputs**: `recommendations.csv`, user-product suggestion table.
-
----
-
-## 🛠 Tech Stack
-
-| Category          | Tools/Packages                                     |
-|-------------------|----------------------------------------------------|
-| Data Processing   | Python, Pandas, NumPy                              |
-| ML & Forecasting  | Scikit-learn, Prophet, Surprise, KMeans            |
-| NLP               | NLTK, TF-IDF Vectorizer                            |
-| Visualization     | Power BI, Seaborn, Matplotlib, WordCloud           |
-| Dashboarding      | Power BI (desktop), Streamlit deployment |
-| Project Structure | GitHub, Jupyter Notebooks                          |
-
----
-
-## 📁 Project Structure
+## Project Structure
 smart-retail-analytics/
+
 ├── data/
-│ ├── raw/
-│ └── processed/
-├── notebooks/
-│ ├── 01_EDA.ipynb
-│ ├── 02_Churn_Model.ipynb
-│ ├── 03_Segmentation.ipynb
-│ ├── 04_Demand_Forecast.ipynb
-│ ├── 05_Sentiment_NLP.ipynb
-│ └── 06_Recommender.ipynb
-├── visuals/
+
+│ ├── raw/ # Ignored in .gitignore
+
+│ └── processed/ # LFS tracked CSVs
+
+├── notebooks/ # EDA & ML notebooks
+
+├── scripts/ # Reusable Python scripts
+
 ├── dashboard/
-│ ├── SmartRetailDashboard.pbix
-│ └── app.py
+
+│ └── app.py # Streamlit dashboard app
+
+├── visuals/ # Screenshots & exports
+
 ├── requirements.txt
-├── LICENSE
+
 └── README.md
 
 
 ---
 
-## 🧠 Business Use Cases
+## Screenshots
 
-- Retarget high-risk users with personalized offers
-- Run lifecycle-based campaigns by segment
-- Plan product stocking with forward-looking forecasts
-- Track voice of the customer with real-time sentiment
-- Drive cross-sell revenue using personalized recommendations
+| Churn Metrics | Customer Segments |
+|---------------|--------------------|
+| ![churn](visuals/churn_sample.png) | ![segments](visuals/segments_sample.png) |
 
 ---
 
-## ✅ How to Run
+## Author
 
-1.  Clone the repository:
-    ```bash
-    git clone https://github.com/yourusername/smart-retail-analytics.git
-    cd smart-retail-analytics
+**Bhuvan Sai Thatthari**  
+📍 Data Analyst | M.S. in Data Analytics Engineering  
+🔗 [LinkedIn](https://www.linkedin.com/in/your-profile) • [GitHub](https://github.com/Bhu1work)
 
-2.  python -m venv venv
-    source venv/bin/activate  # or venv\Scripts\activate (Windows)
-    pip install -r requirements.txt
+---
 
-3.  jupyter notebook
+## Future Enhancements
+
+- Add deep learning model for sentiment classification  
+- Improve recommender accuracy with hybrid models  
+- CI/CD + Docker support for production readiness  
+
+---
+
+## Contributions
+
+This is a solo-built portfolio project. For feedback or collaboration inquiries, feel free to open an issue or connect via LinkedIn.
+
+
