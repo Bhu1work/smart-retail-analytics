@@ -1,4 +1,4 @@
-# 🛍Smart Retail Intelligence Dashboard
+# Smart Retail Intelligence Dashboard
 
 
 ## Live Demo
