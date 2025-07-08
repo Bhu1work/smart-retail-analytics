@@ -1,4 +1,4 @@
-# 🛍Smart Retail Analytics: End-to-End Business Intelligence & ML Platform
+# Smart Retail Analytics: End-to-End Business Intelligence & ML Platform
 
 A full-scale data analytics and machine learning solution built for a modern e-commerce environment. This project extracts deep business value from raw behavioral data — predicting churn, segmenting customers, forecasting demand, analyzing sentiment, and recommending products — all integrated into a real-world, business-facing dashboard.
 
